@@ -1,12 +1,14 @@
+---
+# **Telecom X Parte 2: Predicción de Cancelación de Clientes (Churn)**
 
-# **Informe Técnico y Estratégico: Predicción de Cancelación de Clientes (Churn)**
 
-
-1. Contexto del Problema 📉
+## 📉 Contexto del Problema 
 
 La cancelación de clientes (churn) representa una pérdida significativa de ingresos y una amenaza para el crecimiento de la empresa. Identificar y retener a los clientes en riesgo es una prioridad estratégica. Este proyecto se enfoca en analizar los datos históricos para construir una herramienta predictiva que anticipe el abandono de clientes, permitiendo a la empresa actuar de manera proactiva.
 
-2. Estructura del Proyecto 📂
+---
+
+## 📂 Estructura del Proyecto 
 
 El repositorio está organizado de la siguiente manera para facilitar su comprensión y replicabilidad:
 telecomX2p.ipynb: Archivo principal de Google Colab que contiene el código completo para el preprocesamiento de datos, el modelado, la evaluación de métricas y la generación de gráficos.
@@ -16,12 +18,20 @@ metricas/: Tablas CSV con las métricas de rendimiento e importancia de las vari
 modelos/: Los modelos de Machine Learning entrenados y guardados en formato .pkl.
 Uso_modelo.ipynb:  Archivo de Google Colab con el código para uso del modelo con otro conjunto de datos.
 
+---
+
+## ⚡ Cómo Ejecutar el Código 
+Acceder al Notebook de Google Colab: Abre el archivo telecomx.ipynb en Google Colab.
+Ejecutar las Celdas: Ejecuta las celdas de código secuencialmente en el notebook. Los resultados del análisis y las visualizaciones se mostrarán directamente en el notebook.
+
 3. Datos del Proyecto 💾
 
 Los datos utilizados para este análisis son el resultado de un proceso de ETL previo. Se toman de un archivo CSV disponible públicamente en el siguiente enlace:
 Fuente de Datos: https://raw.githubusercontent.com/mafer2871/ChallegeTelecomX/main/Datos/cancelaciones.csv
 
-4. Análisis Exploratorio y Hallazgos Clave 🔍
+---
+
+## 🔍 Análisis Exploratorio y Hallazgos Clave 
 
 El análisis de los datos reveló patrones críticos que actúan como señales de alerta temprana:
 Contratos Mes a Mes: Los clientes con este tipo de contrato son, por mucho, el segmento de mayor riesgo.
@@ -29,14 +39,18 @@ Antigüedad en la Empresa: Los clientes en sus primeros meses son los más prope
 Servicio de Fibra Óptica: La contratación de este servicio está fuertemente correlacionada con una mayor tasa de abandono, sugiriendo problemas de calidad o satisfacción.
 Pagos Elevados: Los clientes con altos cargos mensuales y que utilizan cheques electrónicos tienen un mayor riesgo de churn.
 
-5. Metodología de Modelado 🛠️
+---
+
+## 🛠️ Metodología de Modelado 
 
 Se implementó un pipeline de ciencia de datos para garantizar la consistencia y fiabilidad del modelo. Este proceso incluyó:
 Preprocesamiento de Datos: Transformación de variables categóricas y escalado de variables numéricas.
 Manejo del Desbalance de Clases: Uso de SMOTE para equilibrar el conjunto de datos de entrenamiento, ya que la clase de clientes que cancelaron era minoritaria.
 Entrenamiento y Optimización: Se evaluaron tres modelos de clasificación, optimizando sus hiperparámetros para encontrar el mejor rendimiento.
 
-6. Resultados y Métricas Clave 📈
+---
+
+## 📈 Resultados y Métricas Clave 
 
 Tras la optimización, se obtuvieron las siguientes métricas para cada modelo. Las métricas de Precision y Recall se consideran las más importantes para este problema.
 Modelo
