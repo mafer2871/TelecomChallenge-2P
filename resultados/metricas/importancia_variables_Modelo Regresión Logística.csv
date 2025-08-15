@@ -1,0 +1,24 @@
+Variable,Valor del Coeficiente
+cat__Internet_Fiber optic,1.0333907212362203
+num__CargoTotal,0.7443048546361468
+remainder__FacturaElectronica,0.4361514837655241
+cat__MetodoPago_Electronic check,0.41997586763279326
+remainder__TV,0.34983286268671976
+remainder__Peliculas,0.30314658698407315
+remainder__MultiplesLineas,0.23826871927621057
+remainder__AdultoMayor,0.13075531143721714
+cat__Genero_Mujer,0.07935675464223264
+cat__MetodoPago_Mailed check,0.07065735819050613
+remainder__ProteccionDispositivo,0.0051821089120572435
+remainder__Pareja,-0.04350067123447553
+remainder__Respaldo,-0.08066781730387139
+cat__MetodoPago_Credit card (automatic),-0.09817814322191883
+remainder__Telefono,-0.1355608053353613
+remainder__Dependientes,-0.16150730010573328
+num__CargoMensual,-0.4127607316965925
+remainder__Soporte,-0.4262307258875026
+remainder__Seguridad,-0.44271763787837376
+cat__Contrato_One year,-0.7273526243600612
+cat__Internet_No,-1.1668435047826808
+cat__Contrato_Two year,-1.302707688595345
+num__TiempoContrato,-1.398746166315052

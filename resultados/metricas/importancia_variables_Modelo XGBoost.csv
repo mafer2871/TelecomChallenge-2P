@@ -1,0 +1,28 @@
+Variable,Importancia
+cat__Contrato_Month-to-month,0.3744337
+cat__Internet_Fiber optic,0.18259916
+remainder__TV,0.035385482
+remainder__Seguridad,0.03084923
+remainder__Soporte,0.02773575
+remainder__Peliculas,0.027146451
+remainder__FacturaElectronica,0.026743129
+remainder__MultiplesLineas,0.024764305
+cat__Internet_No,0.023709718
+cat__Contrato_Two year,0.021667616
+remainder__Pareja,0.021132667
+cat__Internet_DSL,0.019824974
+cat__Contrato_One year,0.019397972
+remainder__Telefono,0.018401217
+remainder__Respaldo,0.018364292
+remainder__ProteccionDispositivo,0.018148074
+cat__MetodoPago_Electronic check,0.016348673
+remainder__Dependientes,0.015934702
+remainder__AdultoMayor,0.015034365
+num__TiempoContrato,0.014096963
+cat__MetodoPago_Credit card (automatic),0.0126512535
+cat__Genero_Hombre,0.00743359
+num__CargoMensual,0.0073421267
+cat__MetodoPago_Bank transfer (automatic),0.0073131267
+cat__MetodoPago_Mailed check,0.007050504
+num__CargoTotal,0.0064909644
+cat__Genero_Mujer,0.0
