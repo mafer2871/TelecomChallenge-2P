@@ -11,12 +11,13 @@ La cancelación de clientes (churn) representa una pérdida significativa de ing
 ## 📂 Estructura del Proyecto 
 
 El repositorio está organizado de la siguiente manera para facilitar su comprensión y replicabilidad:
-telecomX2p.ipynb: Archivo principal de Google Colab que contiene el código completo para el preprocesamiento de datos, el modelado, la evaluación de métricas y la generación de gráficos.
-resultados/: Carpeta que almacena los productos del análisis, incluyendo:
-graficas/: Visualizaciones de la matriz de confusión, curvas ROC e importancia de las variables.
-metricas/: Tablas CSV con las métricas de rendimiento e importancia de las variables para cada modelo.
-modelos/: Los modelos de Machine Learning entrenados y guardados en formato .pkl.
-Uso_modelo.ipynb:  Archivo de Google Colab con el código para uso del modelo con otro conjunto de datos.
+
+- **telecomX2p.ipynb:** Archivo principal de Google Colab que contiene el código completo para el preprocesamiento de datos, el modelado, la evaluación de métricas y la generación de gráficos.
+- **resultados/:** Carpeta que almacena los productos del análisis, incluyendo:
+- graficas/: Visualizaciones de la matriz de confusión, curvas ROC e importancia de las variables.
+- metricas/: Tablas CSV con las métricas de rendimiento e importancia de las variables para cada modelo.
+- modelos/: Los modelos de Machine Learning entrenados y guardados en formato .pkl.
+- **Uso_modelo.ipynb:**  Archivo de Google Colab con el código para uso del modelo con otro conjunto de datos.
 
 ---
 
@@ -34,19 +35,24 @@ Fuente de Datos: https://raw.githubusercontent.com/mafer2871/ChallegeTelecomX/ma
 ## 🔍 Análisis Exploratorio y Hallazgos Clave 
 
 El análisis de los datos reveló patrones críticos que actúan como señales de alerta temprana:
-Contratos Mes a Mes: Los clientes con este tipo de contrato son, por mucho, el segmento de mayor riesgo.
-Antigüedad en la Empresa: Los clientes en sus primeros meses son los más propensos a cancelar.
-Servicio de Fibra Óptica: La contratación de este servicio está fuertemente correlacionada con una mayor tasa de abandono, sugiriendo problemas de calidad o satisfacción.
-Pagos Elevados: Los clientes con altos cargos mensuales y que utilizan cheques electrónicos tienen un mayor riesgo de churn.
+
+- **Contratos Mes a Mes:** Los clientes con este tipo de contrato son, por mucho, el segmento de mayor riesgo.
+  
+- **Antigüedad en la Empresa:** Los clientes en sus primeros meses son los más propensos a cancelar.
+  
+- **Servicio de Fibra Óptica:** La contratación de este servicio está fuertemente correlacionada con una mayor tasa de abandono, sugiriendo problemas de calidad o satisfacción.
+
+- **Pagos Elevados:** Los clientes con altos cargos mensuales y que utilizan cheques electrónicos tienen un mayor riesgo de churn.
 
 ---
 
 ## 🛠️ Metodología de Modelado 
 
 Se implementó un pipeline de ciencia de datos para garantizar la consistencia y fiabilidad del modelo. Este proceso incluyó:
-Preprocesamiento de Datos: Transformación de variables categóricas y escalado de variables numéricas.
-Manejo del Desbalance de Clases: Uso de SMOTE para equilibrar el conjunto de datos de entrenamiento, ya que la clase de clientes que cancelaron era minoritaria.
-Entrenamiento y Optimización: Se evaluaron tres modelos de clasificación, optimizando sus hiperparámetros para encontrar el mejor rendimiento.
+
+- Preprocesamiento de Datos: Transformación de variables categóricas y escalado de variables numéricas.
+- Manejo del Desbalance de Clases: Uso de SMOTE para equilibrar el conjunto de datos de entrenamiento, ya que la clase de clientes que cancelaron era minoritaria.
+- Entrenamiento y Optimización: Se evaluaron tres modelos de clasificación, optimizando sus hiperparámetros para encontrar el mejor rendimiento.
 
 ---
 
@@ -67,9 +73,9 @@ Conclusión de los Resultados: El modelo de Random Forest es la mejor opción, y
 
 Basadas en los hallazgos de los modelos, se proponen las siguientes acciones concretas:
 
-- Fidelización Temprana: Centrar los esfuerzos en los clientes con contratos mes a mes en sus primeros 3-6 meses. Utilizar el modelo para identificarlos y ofrecerles incentivos personalizados (descuentos, upgrades) para que se cambien a un contrato de un año o más.
-- Mejora del Servicio de Fibra Óptica: Investigar las causas subyacentes de la insatisfacción de los clientes de fibra óptica. Fortalecer el soporte técnico para este segmento y considerar un programa de monitoreo proactivo para detectar problemas antes de que el cliente los reporte.
-- Optimización de Pagos: Ofrecer incentivos a los clientes que usan cheques electrónicos para que cambien a métodos de pago más convenientes y automáticos, lo que puede aumentar la lealtad.
+- **Fidelización Temprana:** Centrar los esfuerzos en los clientes con contratos mes a mes en sus primeros 3-6 meses. Utilizar el modelo para identificarlos y ofrecerles incentivos personalizados (descuentos, upgrades) para que se cambien a un contrato de un año o más.
+- **Mejora del Servicio de Fibra Óptica:** Investigar las causas de la insatisfacción de los clientes de fibra óptica. Fortalecer el soporte técnico para este segmento y considerar un programa de monitoreo proactivo para detectar problemas antes de que el cliente los reporte.
+- **Optimización de Pagos:** Ofrecer incentivos a los clientes que usan cheques electrónicos para que cambien a métodos de pago más convenientes y automáticos, lo que puede aumentar la lealtad.
 
 ---
 
