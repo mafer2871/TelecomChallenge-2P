@@ -25,7 +25,9 @@ El repositorio está organizado de la siguiente manera para facilitar su compren
 Acceder al Notebook de Google Colab: Abre el archivo telecomx.ipynb en Google Colab.
 Ejecutar las Celdas: Ejecuta las celdas de código secuencialmente en el notebook. Los resultados del análisis y las visualizaciones se mostrarán directamente en el notebook.
 
-3. Datos del Proyecto 💾
+---
+
+## 💾 Datos del Proyecto 
 
 Los datos utilizados para este análisis son el resultado de un proceso de ETL previo. Se toman de un archivo CSV disponible públicamente en el siguiente enlace:
 Fuente de Datos: https://raw.githubusercontent.com/mafer2871/ChallegeTelecomX/main/Datos/cancelaciones.csv
