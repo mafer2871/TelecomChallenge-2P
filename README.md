@@ -53,46 +53,32 @@ Entrenamiento y Optimización: Se evaluaron tres modelos de clasificación, opti
 ## 📈 Resultados y Métricas Clave 
 
 Tras la optimización, se obtuvieron las siguientes métricas para cada modelo. Las métricas de Precision y Recall se consideran las más importantes para este problema.
-Modelo
-Accuracy
-Precision
-Recall
-F1-Score
-ROC-AUC
-Regresión Logística
-0.744
-0.512
-0.805
-0.626
-0.843
-Random Forest
-0.772
-0.555
-0.719
-0.626
-0.841
-XGBoost
-0.770
-0.569
-0.563
-0.566
-0.814
+| Modelo | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Regresión Logística** | 0.744 | 0.512 |   0.805   | 0.626 | **0.843** |
+| **Random Forest** | **0.772** | **0.555** | 0.719 | **0.626** | 0.841 |
+| **XGBoost** | 0.770 | 0.569 | 0.563 | 0.566 | 0.814 |
 
 Conclusión de los Resultados: El modelo de Random Forest es la mejor opción, ya que presenta la mayor precisión y un buen Recall, permitiendole identificar de manera fiable a un alto porcentaje de clientes en riesgo sin generar un exceso de falsas alarmas, lo cual es ideal para una estrategia de retención eficiente.
 
-7. Recomendaciones Estratégicas 💡
+---
+
+## 💡 Recomendaciones Estratégicas 
 
 Basadas en los hallazgos de los modelos, se proponen las siguientes acciones concretas:
 Fidelización Temprana: Centrar los esfuerzos en los clientes con contratos mes a mes en sus primeros 3-6 meses. Utilizar el modelo para identificarlos y ofrecerles incentivos personalizados (descuentos, upgrades) para que se cambien a un contrato de un año o más.
 Mejora del Servicio de Fibra Óptica: Investigar las causas subyacentes de la insatisfacción de los clientes de fibra óptica. Fortalecer el soporte técnico para este segmento y considerar un programa de monitoreo proactivo para detectar problemas antes de que el cliente los reporte.
 Optimización de Pagos: Ofrecer incentivos a los clientes que usan cheques electrónicos para que cambien a métodos de pago más convenientes y automáticos, lo que puede aumentar la lealtad.
 
-8. Uso del Modelo 🚀
+---
+
+## 🚀 Uso del Modelo 
 
 El modelo final (Random Forest) ha sido guardado en el archivo resultados/modelos/mejor_modelo.pkl. Puede ser cargado y utilizado fácilmente para predecir el riesgo de churn en nuevos datos de clientes, el código para uso se encuentra en el archivo uso_modelo.ipynb de este repositorio.
 
+---
 
-9. Autoría y Tecnologías 🧑‍💻
+## 🧑‍💻 Autoría y Tecnologías 
 
 Autor: María Fernanda Rodríguez
 Tecnologías Utilizadas: Python, pandas, numpy, scikit-learn, xgboost, imblearn, matplotlib, seaborn.
