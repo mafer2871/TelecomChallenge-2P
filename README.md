@@ -1,5 +1,5 @@
 
-Informe Técnico y Estratégico: Predicción de Cancelación de Clientes (Churn)
+# **Informe Técnico y Estratégico: Predicción de Cancelación de Clientes (Churn)**
 
 
 1. Contexto del Problema 📉
